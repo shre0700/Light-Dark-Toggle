@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="toggle_style.css">
+</head>
+<body id ="cltest_back">
+    <div class="body-back-light">
+        <div class="main">
+            <p id ="cltest_p" class="light">Light/Dark Toggle Button</p>
+            <button class="toggle" id="cltest_t" onclick="toggle_click()">
+                <p id="cltest_span">.</p>
+            </button>
+            <script>
+             function toggle_click(){
+               cltest_back.class= "body-back-dark";
+               cltest_p.class= "dark";
+               cltest_span.class= "toggle-dark";
+               cltest_t.class="toggle-btn";
+               cltest_back.classList.add("body-back-dark");
+               cltest_p.classList.add("dark");
+               cltest_span.classList.add("toggle-dark");
+               cltest_t.classList.add("toggle-btn");
+
+              }
+
+            </script>
+        </div>
+    </div>
+</body>
+</html>
